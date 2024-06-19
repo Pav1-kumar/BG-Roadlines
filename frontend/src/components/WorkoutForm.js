@@ -33,7 +33,7 @@ const WorkoutForm = () => {
 
     const workout = {date, invoice_number, vehicle_number, customer_code, customer_name, quantity, perTon_fright, fright, shortage, damage, net_amount}
 
-    const response = await fetch('/api/workouts', {
+    const response = await fetch('https://bg-roadlines-backend.onrender.com/api/workouts', {
       method: 'POST',
       body: JSON.stringify(workout),
       headers: {
